@@ -1,0 +1,34 @@
+<header class="page-header text-center">
+  <h1>Sign Up</h1>
+</header>
+
+{{#if result}}
+  {{result}}
+{{/if}}
+
+
+<form action="/emails" method="post">
+  <div class="form-group">
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="email_options[first_name]" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="email_options[last_name]" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="email_options[password]" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email_options[email]" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <input type="submit" class="btn btn-success">
+  </div>
+</form>
