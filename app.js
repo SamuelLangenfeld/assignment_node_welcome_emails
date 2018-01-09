@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const EmailService = require("./email");
 
 // ----------------------------------------
 // App Variables
@@ -13,6 +12,7 @@ app.locals.appName = "My App";
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
+const EmailService = require("./email");
 
 // ----------------------------------------
 // Body Parser

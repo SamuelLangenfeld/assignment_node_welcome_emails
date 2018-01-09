@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === "production") {
   };
 }
 
+console.log(process.env.EMAIL_USER);
 // Create the SendGrid transport
 const _transporter = nodemailer.createTransport(_options);
 
