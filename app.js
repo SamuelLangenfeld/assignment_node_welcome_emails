@@ -87,7 +87,7 @@ app.get("/", (req, res, next) => {
 
 app.post("/emails", (req, res, next) => {
   const options = {
-    from: process.env.SENDGRID-EMAIL,
+    from: process.env.SENDGRID_EMAIL,
     to: req.body.email_options.email,
     subject: `Congrats on Signing Up, ${req.body.email_options.first_name}!`,
     text: "Successfully sent an email. Woot.",
