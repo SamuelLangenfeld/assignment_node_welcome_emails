@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-
+require('dotenv').config()
 // Use the SendGrid transport
 const sendGridTransport = require("nodemailer-sendgrid-transport");
 
@@ -15,6 +15,7 @@ if (process.env.NODE_ENV === "production") {
     }
   });
 } else {
+  console.log(process.env.EMAIL_USER)
   _options = {
     service: "gmail",
     auth: {
