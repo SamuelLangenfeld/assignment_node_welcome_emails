@@ -87,7 +87,7 @@ app.get("/", (req, res, next) => {
 
 app.post("/emails", (req, res, next) => {
   const options = {
-    from: process.env.EMAIL_USER,
+    from: "jim@aol.com",
     to: req.body.email_options.email,
     subject: `Congrats on Signing Up, ${req.body.email_options.first_name}!`,
     text: "Successfully sent an email. Woot.",
